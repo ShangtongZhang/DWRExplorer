@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+  font: 13px/1.22 Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+.side-content {
+  float: left;
+  width: 40%;
+  max-width: 400px;
+  border-right: 1px solid #CCC;
+  height: 100%;
+  overflow: auto;
+}
+
+.side-content .entry {
+  padding: 5px 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.side-content .entry:hover {
+  background: #EEE;
+}
+
+.main-content {
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.J_EntryDetail {
+  display: none;
+}
+
+#dwr_parser_iframe {
+  display: none;
+}
+
+ul.jqtree-tree .jqtree-title.objInsEntryTag {
+  color: rgb(136, 19, 145);
+}
+
+ul.jqtree-tree .jqtree-title.objInsEntryValue[data-type='number']
+ul.jqtree-tree .jqtree-title.objInsEntryValue[data-type='boolean'] {
+  color: rgb(28, 0, 207);
+}
+
+ul.jqtree-tree .jqtree-title.objInsEntryValue[data-type='string'] {
+  color: rgb(196, 26, 22);
+}
+
+ul.jqtree-tree .jqtree-title.objInsEntryValue[data-type='undefined'] {
+  color: rgb(128, 128, 128);
+}
+
+ul.jqtree-tree li.jqtree-selected > .jqtree-element,
+ul.jqtree-tree li.jqtree-selected > .jqtree-element:hover {
+  background: none;
+}
+
+ul.jqtree-tree .jqtree-title {
+  font-family: Consolas, 'Lucida Console', monospace;
+}
